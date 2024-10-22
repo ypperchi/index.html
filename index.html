@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksite</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<style>
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url (book2.jpg);
+}
+
+header {
+    background-color: gray;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    
+}
+
+aside.sidebar {
+    width: 200px;
+    margin-right: 20px;
+}
+
+section.content {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Chi's Booksite</h1> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="browse-books.html">Browse Books</a></li> 
+                <li><a href="about-us.html">About Us</a></li> 
+                <li><a href="contact.html">Contact</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="fiction.html">Fiction</a></li> 
+                <li><a href="non-fiction.html">Non-Fiction</a></li>
+                <li><a href="science-fiction.html">Science Fiction</a></li>
+                <li><a href="fantasy.html">Fantasy</a></li> 
+            </ul>
+        </aside>
+
+        <section class="content">
+            <!-- Book listings, featured books, etc. will go here -->
+            <h2>Featured Books</h2>
+            <div class="book-item">
+                <img src="book1.jpg" alt="Book 1">
+                <h3>Diaries of Franz Kafka</h3>
+                <p>Author: Franz Kafka</p>
+            </div>
+            <div class="book-item">
+                <img src="book2.jpg" alt="Book 2">
+                <h3>A Hue of Blue</h3>
+                <p>Author: Marie France</p>
+            </div>
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Chi's Booksite</p>
+    </footer>
+</body>
+</html>
