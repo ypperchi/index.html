@@ -3,111 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booksite</title>
-    <link rel="stylesheet" href="style.css"> 
-</head>
-<style>
+    <title>My Booksite</title>
+    <!-- add your internal CSS code here -->
+     <style>
+
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url (book2.jpg);
-}
+            font-family: 'Times new Roman', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            background-image: url(book2.jpg);
+            
+            
+        }
 
-header {
-    background-color: gray;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        header {
+            background-color: #201c1c;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            
+            
+        }
+        
+        .container {
+            display: flex;
+            padding: 20px;
+        }
 
-.logo h1 {
-    margin: 0;
-}
+        .sidebar {
+            background-color: #572323d5;
+            color: #3a323250;
+            width: 250px;
+            padding: 20px;
+        }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            font-size: larger ;
+        }
 
-nav li {
-    margin-right: 20px;
-}
+        .sidebar li {
+            margin-bottom: 10px;
+        }
 
-nav a {
-    text-decoration: none;
-    color: #333;
-}
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
 
-main {
-    display: flex;
-    padding: 20px;
-    
-}
+        .sidebar a:hover {
+            background-color: #cabdbdc9;
+        }
 
-aside.sidebar {
-    width: 200px;
-    margin-right: 20px;
-}
+        main {
+            background-color: #f3e2e200;
+            padding: 20px;
+            flex: 1; /* 
+            margin-left: 20px; 
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            color: #e9dee0;
+            font-weight: bolder;
+        }
 
-section.content {
-    flex-grow: 1;
-}
+        section {
+            margin-bottom: 20px;
+        }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-</style>
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Chi's Booksite</h1> 
-        </div>
-        <nav>
+         <img src="logo.png" alt="Website" class="logo">
+        <h1>Welcome to My Booksite</h1>
+    </header>
+    <div class="container">
+
+        <nav class="sidebar">
             <ul>
-                <li><a href="index.html">Home</a></li> 
-                <li><a href="browse-books.html">Browse Books</a></li> 
-                <li><a href="about-us.html">About Us</a></li> 
-                <li><a href="contact.html">Contact</a></li> 
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Booklist</a></li>
+                <li><a href="#">Authors</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-    </header>
+        <main>
+            <section>
 
-    <main>
-        <aside class="sidebar">
-            <h2>Categories</h2>
-            <ul>
-                <li><a href="fiction.html">Fiction</a></li> 
-                <li><a href="non-fiction.html">Non-Fiction</a></li>
-                <li><a href="science-fiction.html">Science Fiction</a></li>
-                <li><a href="fantasy.html">Fantasy</a></li> 
-            </ul>
-        </aside>
 
-        <section class="content">
-            <!-- Book listings, featured books, etc. will go here -->
-            <h2>Featured Books</h2>
-            <div class="book-item">
-                <img src="book1.jpg" alt="Book 1">
-                <h3>Diaries of Franz Kafka</h3>
-                <p>Author: Franz Kafka</p>
-            </div>
-            <div class="book-item">
-                <img src="book2.jpg" alt="Book 2">
-                <h3>A Hue of Blue</h3>
-                <p>Author: Marie France</p>
-            </div>
+                <h2>INTRODUCTION</h2>
+                <p>Welcome to a space where ideas come alive!  
+                We believe that understanding ourselves, the world around us, and the nature of existence is a lifelong journey. 
+                 Here you'll find resources on philosophy, psychology, and logic, 
+                 all designed to help you navigate the complexities of life with greater clarity and purpose.</p>
+
+                <p>Seek wisdom and clarity in the world of ideas. 
+                    My website offers a rich tapestry of resources on philosophy, psychology, and logic, designed to illuminate the complexities of the human experience.  
+                    Explore thought-provoking articles, delve into insightful discussions,
+                    and discover new perspectives on the fundamental questions of life.</p>
+                    
+                <p> Join us in exploring the fundamental questions of life, the intricacies of the human mind,
+                 and the enduring power of logic.
+                 Dive into a world of ideas with our diverse selection of books on philosophy, psychology, 
+                 and logic. Get lost in thought-provoking essays, explore the intricacies of 
+                 the human mind, and find the perfect book to challenge and inspire you.</p>
+        
+    
             </section>
-    </main>
-
+        </main>
+    </div>
     <footer>
-        <p>&copy; 2024 Chi's Booksite</p>
+        <p>&copy; 2024 My Website</p>
     </footer>
 </body>
 </html>
